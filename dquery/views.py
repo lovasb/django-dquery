@@ -10,7 +10,7 @@ def url_reverse(request):
         # If not DEBUG, we don't enable the non ajax request.
         raise http.Http404('Non ajax query')
     if request.method in ('GET', 'POST'):
-        url_name = request.GET.get('url', None)
+        url_name = request.GET.get('url_name', None)
         if not url_name:
             raise http.Http404('Please specify the reverse url name!')
         try:
