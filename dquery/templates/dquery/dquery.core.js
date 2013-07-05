@@ -1,3 +1,4 @@
+{% load url from future %}
 <script type="text/javascript">
 	var DQuery = {
 	    ajax: function(args) {
